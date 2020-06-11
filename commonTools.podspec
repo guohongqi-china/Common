@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'commonTools'
-  s.version          = '0.1.12'
+  s.version          = '0.1.13'
   s.summary          = 'common user'
 
   s.description      = <<-DESC
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/guohongqi-china/Common'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'guohongqi-china' => '820003039@qq.com' }
-  s.source           = { :git => 'https://github.com/guohongqi-china/Common.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/guohongqi-china/Common.git', :tag => "v#{s.version}" }
 
-  s.public_header_files = "commonTools/ProConfig.h"
-  s.source_files  = "commonTools/ProConfig.h"
+  s.public_header_files = "commonTools/Classes/ProConfig.h"
+  s.source_files  = "commonTools/Classes/ProConfig.h"
   s.ios.deployment_target = '8.0'
 
   s.requires_arc = true
 
 s.subspec 'FrameTools' do |ss|
-  ss.source_files = 'commonTools/FrameTools/**/*.{h,m}'
-  ss.public_header_files = 'commonTools/FrameTools/**/*.{h}'
+  ss.source_files = 'commonTools/Classes/FrameTools/**/*.{h,m}'
+  ss.public_header_files = 'commonTools/Classes/FrameTools/**/*.{h}'
 end
 
 end
