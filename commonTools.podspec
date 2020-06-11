@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'commonTools'
-  s.version          = '0.1.1'
+  s.version          = '0.1.10'
   s.summary          = 'A short description of commonTools.'
 
   s.description      = <<-DESC
@@ -20,15 +20,15 @@ TODO: Add long description of the pod here.
   s.author           = { 'guohongqi-china' => '820003039@qq.com' }
   s.source           = { :git => 'https://github.com/guohongqi-china/Common.git', :tag => s.version.to_s }
 
-  s.public_header_files = "commonTools/Classes/ProConfig.h"
-  s.source_files  = "commonTools/Classes/**/*"
+  s.public_header_files = "commonTools/ProConfig.h"
+  s.source_files  = "commonTools/ProConfig.h"
   s.ios.deployment_target = '8.0'
 
   s.requires_arc = true
 
-#s.subspec 'FrameTools' do |ss|
-  #ss.source_files = 'commonTools/Classes/FrameTools/**/*.{h,m}'
-  #ss.public_header_files = 'commonTools/Classes/FrameTools/**/*.{h}'
-#end
+s.subspec 'FrameTools' do |ss|
+  ss.source_files = 'commonTools/FrameTools/**/*.{h,m}'
+  ss.public_header_files = 'commonTools/FrameTools/**/*.{h}'
+end
 
 end
