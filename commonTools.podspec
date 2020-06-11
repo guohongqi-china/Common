@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'commonTools'
-  s.version          = '0.1.10'
-  s.summary          = 'A short description of commonTools.'
+  s.version          = '0.1.11'
+  s.summary          = 'common user'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: common tools for user
                        DESC
 
   s.homepage         = 'https://github.com/guohongqi-china/Common'
