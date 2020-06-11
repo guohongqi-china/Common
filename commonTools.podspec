@@ -21,16 +21,25 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/820003039@qq.com/commonTools'
+  s.homepage         = 'https://github.com/guohongqi-china/commonTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '820003039@qq.com' => 'guohongqi9010@zto.com' }
-  s.source           = { :git => 'https://github.com/820003039@qq.com/commonTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'guohongqi-china' => '820003039@qq.com' }
+  s.source           = { :git => 'https://github.com/guohongqi-china/commonTools.git', :tag => s.version.to_s }
 
+  s.public_header_files = "commonTools/Classes/ProConfig.h"
+  s.source_files  = "commonTools/Classes/**/*"
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'commonTools/Classes/**/*'
+  s.requires_arc = true
+
+#s.subspec 'FrameTools' do |ss|
+  #ss.source_files = 'commonTools/Classes/FrameTools/**/*.{h,m}'
+  #ss.public_header_files = 'commonTools/Classes/FrameTools/**/*.{h}'
+#end
+
+
+  # s.source_files = 'commonTools/Classes/**/*'
   
   # s.resource_bundles = {
   #   'commonTools' => ['commonTools/Assets/*.png']
