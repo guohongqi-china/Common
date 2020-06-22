@@ -46,8 +46,13 @@ dispatch_async(dispatch_get_main_queue(), block);\
 
 // 通知
 #define NotificationCenter  [NSNotificationCenter defaultCenter]
-#define PostNotification(__signal__,__object__,__userInfo__) \
-[NotificationCenter postNotificationName:__signal__ object:__object__ userInfo:__userInfo__]
+
+#define PostNotification(__signal__,__object__) \
+[NotificationCenter postNotificationName:__signal__ object:__object__]
+
+#define PostNotificationInfo(__signal__,__object__,__info__) \
+[NotificationCenter postNotificationName:__signal__ object:__object__ userInfo:__info__];
+
 #define RegistNotification(__sigNal__,__function__) \
 [NotificationCenter addObserver:self selector:@selector(__function__) name:__sigNal__ object:nil]
 
