@@ -21,6 +21,7 @@
 #import "ProConfig.h"
 #import "CommonTools.h"
 #import "CAGradientLayer+ZTPExtension.h"
+#import "UIView+Draw.h"
 
 #pragma mark -  commonDefine
 // 常用高度宽度宏

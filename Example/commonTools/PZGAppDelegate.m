@@ -12,6 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if(0 == 0.0){
+        NSLog(@"==");
+    }
     // Override point for customization after application launch.
     return YES;
 }

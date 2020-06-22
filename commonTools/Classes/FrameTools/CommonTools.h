@@ -32,14 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
   @description  系统方法绘制圆角
  */
 + (void)layerCornerRadius:(CGFloat)cornerRadius view:(UIView *)view;
-/**
- @description 绘制边框阴影
- @param shadowColor 阴影颜色
- @param shadowOffset 阴影偏移，默认(0, -3),这个跟shadowRadius配合使用
- @param shadowOpacity 阴影透明度，默认0
- @param shadowRadius 阴影半径，默认3
- */
-+ (void)drawLayerShadowColor:(UIColor *)shadowColor shadowOffset:(CGSize)shadowOffset shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius view:(UIView *)view;
+
 
 
 @end
