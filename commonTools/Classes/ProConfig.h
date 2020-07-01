@@ -27,9 +27,9 @@
 // 常用高度宽度宏
 #define ScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight    [UIScreen mainScreen].bounds.size.height
-#define SCIsIPhoneX (ZTPTScreenH == 896 || ZTPTScreenH == 812)
-#define SCAreaH (ZTPTIsIPhoneX ? 34 : 0)                          // 底部安全区域
-#define SCStatusBarH (ZTPTIsIPhoneX ? 44 : 20)                    // 顶部状态栏
+#define SCIsIPhoneX (ScreenHeight == 896 || ScreenHeight == 812)
+#define SCAreaH (SCIsIPhoneX ? 34 : 0)                          // 底部安全区域
+#define SCStatusBarH (SCIsIPhoneX ? 44 : 20)                    // 顶部状态栏
 #define SCNavigationH (44 + SCStatusBarH)                         // 导航栏高度
 
 // 常用宏
