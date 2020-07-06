@@ -35,6 +35,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param imageView 绘制对象
 */
 - (void)roundedCornerRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners imageView:(UIImageView *)imageView;
+/**
+ 注意：iOS9之后 通过cornerRadius、masksToBounds绘制圆角 在真机已经不再产生离屏渲染。 图像圆角
+ @description 绘制图片圆角
+ @param rect 范围
+ @param corner 圆角方向
+ @param radii 圆角弧度
+*/
+- (void)roundedCornerRadius:(CGRect)rect  corner:(UIRectCorner)corner cornerRadii:(CGSize)radii;
 
 @end
 

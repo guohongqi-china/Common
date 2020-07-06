@@ -19,19 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)objectIsNull:(id)string;
 
-#pragma mark -  UIKit 相关处理
-/**
- 注意：iOS9之后 通过cornerRadius、masksToBounds绘制圆角 在真机已经不再产生离屏渲染。
- @description 绘制图片圆角
- @param cornerRadius 圆角度
- @param corners 圆角方向
- @param imageView 绘制对象
-*/
-+ (void)roundedCornerRadius:(CGFloat)cornerRadius corners:(UIRectCorner)corners imageView:(UIImageView *)imageView;
-/**
-  @description  系统方法绘制圆角
- */
-+ (void)layerCornerRadius:(CGFloat)cornerRadius view:(UIView *)view;
+
 
 
 

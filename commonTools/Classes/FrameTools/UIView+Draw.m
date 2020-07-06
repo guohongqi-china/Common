@@ -50,4 +50,12 @@
     imageView.image = newImage;
 }
 
+-(void)roundedCornerRadius:(CGRect)rect  corner:(UIRectCorner)corner cornerRadii:(CGSize)radii{
+    UIBezierPath *maskPath= [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corner cornerRadii:radii];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame =self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
 @end
