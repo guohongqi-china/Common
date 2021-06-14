@@ -21,9 +21,19 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/guohongqi-china/Common.git', :tag => "v#{s.version}" }
 
 #  s.source_files  = "commonTools/Classes/**/*"
-  s.vendored_frameworks = 'commonTools/Classes/Framework/CommonTools.framework'
+#  s.vendored_frameworks = 'commonTools/Classes/Framework/CommonTools.framework'
 
   s.ios.deployment_target = '10.0'
+  s.default_subspec = 'framework'
+
+  s.subspec 'sourceCode' do |ss|
+    ss.source_files = 'commonTools/Classes/**/*'
+  end
+  
+  s.subspec 'framework' do |ss|
+    ss.ios.vendored_framework = 'commonTools/*.framework'
+  end
+
 
   s.requires_arc = true
   

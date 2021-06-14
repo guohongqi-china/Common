@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "CAGradientLayer+ZTPExtension.h"
+#import "CommonTools.h"
+#import "Exacttime.h"
+#import "UIView+Draw.h"
 #import "ProConfig.h"
 
 FOUNDATION_EXPORT double commonToolsVersionNumber;
