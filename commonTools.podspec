@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'commonTools'
-  s.version          = '0.1.22'
+  s.version          = '0.1.23'
   s.summary          = 'common user'
 
   s.description      = <<-DESC
@@ -27,10 +27,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   
-
-  
-
-
 
 
 end
