@@ -1,5 +1,5 @@
 PODS:
-  - commonTools (0.1.19)
+  - commonTools (0.1.21)
   - Expecta (1.0.6)
   - "Expecta+Snapshots (3.1.1)":
     - Expecta (~> 1.0)
@@ -31,12 +31,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  commonTools: 689ca96ba7dc901e1f591d4ff6bdbf7b9f3756d5
+  commonTools: 0fbc278704a78833345901e836c1b9a6125ad862
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: ee510cbd6347a90eeda85c13c74cfa6078ec8bc7
+PODFILE CHECKSUM: 23c78e94f53815c20dbe136fb551b83253b5aba3
 
 COCOAPODS: 1.10.1

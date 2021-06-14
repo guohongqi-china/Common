@@ -1,6 +1,6 @@
 {
   "name": "commonTools",
-  "version": "0.1.19",
+  "version": "0.1.21",
   "summary": "common user",
   "description": "common tools for user",
   "homepage": "https://github.com/guohongqi-china/Common",
@@ -13,9 +13,9 @@
   },
   "source": {
     "git": "https://github.com/guohongqi-china/Common.git",
-    "tag": "v0.1.19"
+    "tag": "v0.1.21"
   },
-  "source_files": "commonTools/Classes/**/*",
+  "vendored_frameworks": "commonTools/Classes/Framework/CommonTools.framework",
   "platforms": {
     "ios": "10.0"
   },

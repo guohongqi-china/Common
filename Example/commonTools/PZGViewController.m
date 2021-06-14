@@ -7,6 +7,7 @@
 //
 
 #import "PZGViewController.h"
+#import <CommonTools/ProConfig.h>
 
 @interface PZGViewController ()
 
