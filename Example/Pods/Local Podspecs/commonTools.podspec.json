@@ -1,6 +1,6 @@
 {
   "name": "commonTools",
-  "version": "0.1.25",
+  "version": "0.1.27",
   "summary": "common user",
   "description": "common tools for user",
   "homepage": "https://github.com/guohongqi-china/Common",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/guohongqi-china/Common.git",
-    "tag": "v0.1.25"
+    "tag": "v0.1.27"
   },
   "platforms": {
     "ios": "10.0"
@@ -29,7 +29,8 @@
       "name": "framework",
       "ios": {
         "vendored_frameworks": "commonTools/*.framework"
-      }
+      },
+      "public_header_files": "commonTools/*.framework/Headers/*"
     }
   ]
 }
